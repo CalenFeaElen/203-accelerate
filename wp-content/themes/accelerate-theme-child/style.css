@@ -49,3 +49,14 @@ a.button, a.button:link {
 	color: #45ac9d;
 	text-transform: uppercase;
 }
+
+.case-study-sidebar {
+	float: left;
+	width:  300px;
+}
+
+.case-study img {
+	float:  right;
+	width: 600px;
+}
+
