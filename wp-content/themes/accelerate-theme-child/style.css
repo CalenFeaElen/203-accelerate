@@ -1,3 +1,4 @@
+
 /*
 Theme Name:   Accelerate Theme Child
 Theme URI:    http://example.com/accelerate-theme-child/
@@ -48,15 +49,20 @@ a.button, a.button:link {
 	font-weight: 700;
 	color: #45ac9d;
 	text-transform: uppercase;
-}
+} 
 
 .case-study-sidebar {
-	float: left;
-	width:  300px;
+	display: grid;
+	grid-template-columns: 300px 600px;
+	margin-top: 50px;
+
 }
 
-.case-study img {
-	float:  right;
-	width: 600px;
+.case-study-descriptions {
+	grid-column: 1 / span 1;
 }
 
+.case-study-images {
+	grid-column: 2 / span 1;
+	margin-left: 100px;
+}
