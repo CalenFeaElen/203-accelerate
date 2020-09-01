@@ -133,3 +133,23 @@ a.button, a.button:link {
 	font-size:  2em;
 	font-weight: 600;
 }
+
+nav.social-media-navigation ul {
+	list-style: none;
+}
+
+nav.social-media-navigation li {
+	background-color: #3b3b3b;
+	display: inline;
+	border-radius: 50%;
+	margin: 0 2px;
+	width:  24px;
+	height: 24px;
+	padding:  5px;
+	color: #ffffff;
+}
+
+.dashicons-twitter:before, .dashicons-facebook-alt:before, .fa.fa-linkedin:before {
+	color: #ffffff;
+	font-size: 1.25em;
+}
