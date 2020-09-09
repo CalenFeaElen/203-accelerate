@@ -155,3 +155,26 @@ nav.social-media-navigation li {
 	color: #ffffff;
 	font-size: 1.25em;
 }
+
+.nf-form-fields-required {
+  display: none;
+}
+
+.ninja-forms-req-symbol {
+    display: none;
+}
+
+#nf-field-4 {
+	background: #45ac9d;
+	float:  right;
+	padding-left: 70px;
+	padding-right: 70px;
+}
+
+.nf-form-content, p {
+	width: 600px;
+}
+
+.main-content h2 {
+	padding-left: 180px;
+}
