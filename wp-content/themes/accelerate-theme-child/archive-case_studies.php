@@ -24,7 +24,7 @@ get_header(); ?>
 					
 					<h5><?php echo $services; ?></h5>
 
-					<?php the_excerpt(); ?>
+					<p><?php the_excerpt(); ?></p>
 
 					<p><strong><a href="<?php the_permalink(); ?>">View Project &#62</a></strong></p>
 				</div>

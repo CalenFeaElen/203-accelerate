@@ -26,14 +26,14 @@ get_header(); ?>
 				$image_3 = get_field('image_3'); ?>
 		<article class="case-study">
 			<aside class="case-study-sidebar">
-				<div class="case-study-descriptions">
+				<div class="single-case-study-descriptions">
 					<h2><?php the_title(); ?></h2>
 					<h5><?php echo $services; ?></h5>
 					<h6><?php echo $client; ?></h6>
 
-					<?php the_content(); ?>
+					<p><?php the_content(); ?><p>
 
-					<p><strong><a href="<?php echo $link; ?>">View Project &#62</a></strong></p>
+					<p><strong><a href="<?php echo $link; ?>">View Live Site &#62</a></strong></p>
 				</div>
 
 				<div class="case-study-images">
