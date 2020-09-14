@@ -20,9 +20,7 @@
 				</div>
 
 				<nav class="social-media-navigation fa-(icon name)" role="navigation">
-					<div class="social-media-icons">
 						<?php wp_nav_menu( array( 'theme_location' => 'social-media', 'menu_class' => 'social-media-menu' ) ); ?>
-					</div>
 				</nav>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
