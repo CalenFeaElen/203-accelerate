@@ -308,3 +308,21 @@ nav.social-media-navigation li {
 .case-study a {
 	color: #45ac9d;
 }
+
+.page_404 {
+	display: flex;
+	flex-flow: row;
+}
+
+#right a, #right h1 {
+	color: #45ac9d;
+}
+
+#right {
+	padding-left: 50px;
+}
+
+#right p {
+	width: 500px;
+	font-family: 'Londrina Solid', cursive;
+}
