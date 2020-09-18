@@ -26,7 +26,6 @@ get_header(); ?>
 </section>
 
 <section class="featured-work"> 
-  <div class="site-content">
     <h4>Featured Work</h4> 
     <ul class="homepage-featured-work"> 
       <?php query_posts('posts_per_page=3 & post_type=case_studies'); ?>
@@ -42,26 +41,33 @@ get_header(); ?>
       <?php endwhile; ?>
       <?php wp_reset_query(); ?>
     </ul>  
-  </div>
 </section>
 
-<section class="recent-posts">
- <div class="site-content">
+
+<section class="recent-posts"> 
     <div class="blog-post">
     	<h4>From the Blog</h4>
     	<?php query_posts('posts_per_page=1'); ?>
     		<?php while ( have_posts() ) : the_post(); ?>
     		 	<h3><?php the_title(); ?></h3>
-       			<?php the_excerpt(); ?> 
+       			<p><?php the_excerpt(); ?></p> 
   		<?php endwhile; ?>
   	   <?php wp_reset_query(); ?>
     </div>
- </div>
+    <div class="twitter-feed">
+      <h4>Recent Tweets</h4>
+      <h3>@Skillcrush</h3>
+      <p><?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+        <div id="secondary" class="widget-area" role="complementary">
+          <?php dynamic_sidebar( 'sidebar-2' ); ?>
+        </div>
+      </p>
+      <div class="follow-us">
+        <a href="http://twitter/skillcrush.com">Follow Us &#8250;</a>
+      </div>
+      <?php endif; ?>
+    </div>
+</section>
 
-<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
-  <div id="secondary" class="widget-area" role="complementary">
-    <?php dynamic_sidebar( 'sidebar-2' ); ?>
-  </div>
-<?php endif; ?>
 
 <?php get_footer(); ?>
