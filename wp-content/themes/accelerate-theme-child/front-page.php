@@ -55,19 +55,24 @@ get_header(); ?>
   	   <?php wp_reset_query(); ?>
     </div>
     <div class="twitter-feed">
-      <h4>Recent Tweets</h4>
-      <h3>@Skillcrush</h3>
-      <p><?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
-        <div id="secondary" class="widget-area" role="complementary">
-          <?php dynamic_sidebar( 'sidebar-2' ); ?>
-        </div>
-      </p>
-      <div class="follow-us">
-        <a href="http://twitter/skillcrush.com">Follow Us &#8250;</a>
+      <div class="twitter-feed-content">
+        <h4>Recent Tweets</h4>
+        <h3>@Skillcrush</h3>
+        <p><?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+          <div id="secondary" class="widget-area" role="complementary">
+            <?php dynamic_sidebar( 'sidebar-2' ); ?>
+          </div>
+        </p>
+        <a class = "follow-us" href="http://twitter/skillcrush.com">Follow Us &#8250;</a>  
       </div>
-      <?php endif; ?>
     </div>
+    <div class="mailchimp">
+      <h4>Sign Up For Our Newsletter</h4>
+      <p><?php echo do_shortcode('[mc4wp_form id="47475"]'); ?></p>
+    </div>
+    <?php endif; ?>
 </section>
+
 
 
 <?php get_footer(); ?>
