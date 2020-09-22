@@ -62,6 +62,7 @@ get_header(); ?>
           <div id="secondary" class="widget-area" role="complementary">
             <?php dynamic_sidebar( 'sidebar-2' ); ?>
           </div>
+         <?php endif; ?>
         </p>
         <a class = "follow-us" href="http://twitter/skillcrush.com">Follow Us &#8250;</a>  
       </div>
@@ -70,7 +71,6 @@ get_header(); ?>
       <h4>Sign Up For Our Newsletter</h4>
       <p><?php echo do_shortcode('[mc4wp_form id="47475"]'); ?></p>
     </div>
-    <?php endif; ?>
 </section>
 
 

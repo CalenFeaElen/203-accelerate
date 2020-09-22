@@ -43,14 +43,23 @@ a.button, a.button:link {
 	float: right;
 }
 
-.nf-form-content, p {
-	width: 600px;
+.nf-form-content  {
 	margin: 0;
+	width: 600px;
+	
 }
 
-.contact-us {
-	padding-left: 160px;
+.contact-us p {
+	max-width: 600px;
 }
+
+.contact-us h2 {
+	text-align: center;
+}
+
+
+	
+
 
 /* Blog Styles */
 .blog-post {
@@ -336,9 +345,8 @@ nav.social-media-navigation li {
 
 /* Front-Page Styles */
 .recent-posts{
-	display: grid;
-	grid-template-rows: 1fr;
-	grid-template-columns: 1fr 1fr 1fr;
+	display: flex;
+	flex-flow: row wrap;
 	justify-content: center;
 }
 
@@ -353,18 +361,18 @@ nav.social-media-navigation li {
 	font-size: 24px;
 }
 .blog-post {
-	grid-area: 1 / 1 / 2 / 2;
-	justify-self: center;
-	padding-left: 150px;
+	max-width: 400px;
+	margin-left: 100px;
+	margin-right: 50px;
 }
 
 .blog-post p {
-	max-width: 400px;
+	
 }
-
 .twitter-feed {
-	grid-area: 1 / 2 / 2 / 3;
-	justify-self: center;
+	min-width: 400px;
+	max-width: 400px;
+	margin-right: 50px;
 }
 
 .twitter-feed-content {
@@ -382,7 +390,7 @@ nav.social-media-navigation li {
 }
 
 .mailchimp {
-	grid-area: 1 / 3 / 2 / 4 ;
+	margin-left: 50px;
 }
 
 #sign-up-button {
